@@ -21,6 +21,42 @@
         #one{
             color: green;
         }
+        /* 通用選擇器(使用*符號) */
+        *{
+            font-family: "標楷體";
+        }
+        /* 屬性選擇器 */
+        input[type="bottom"]{
+            background-color: red;
+        }
+        /* 後代選擇器 */
+        .a1 a{
+            color: green;
+        }
+        /* 子選擇器(使用>符號) */
+        .b1>a{
+            color: yellow;
+        }
+        /* 同層相鄰選擇器(使用+符號) */
+        .c1+p{
+            color: blue;
+        }
+           /* 同層全體選擇器(使用~符號) */
+           .d1~p{
+            color: purple;
+        }
+        /* 偽類選擇器(使用:符號) */
+        .e1:hover{
+            color: red;
+        }
+         /* 偽元素擇器(使用::符號) */
+         .f1::before{
+            content: "介紹:";
+        }
+         /* 群組選擇器(使用,符號) */
+        .g1,.g2{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -32,5 +68,67 @@
     <a href="#" class="one two">class選擇器</a>
     <h2>ID選擇器(使用#符號)</h2>
     <a href="#" id="one">ID選擇器</a>
+    <h2>屬性選擇器</h2>
+    <input type="button" value="按鈕">    
+    <h2>後代選擇器(使用空格符號)</h2>
+    <div class="a1">
+        <p>
+            <a href="#">div>p>a</a>
+        </p>
+    </div>
+    <div class="a1">
+        <a href="#">div>a</a>
+    </div>
+    <h2>子選擇器(使用>符號)</h2>
+    <div class="b1">
+        <p>
+            <a href="#">div>p>a</a>
+        </p>
+    </div>
+    <div class="b1">
+        <a href="#">div>a</a>
+    </div>
+    <h2>同層相鄰選擇器(使用+符號)</h2>
+    <ul class="c1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <ul class="c1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>   
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <h2>同層全體選擇器(使用~符號)</h2>
+    <ul class="d1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <ul class="d1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>   
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>    
+    <h2>偽類選擇器(使用:符號)</h2>
+    <a href="#" class="e1">偽類選擇器</a>
+    <h2>偽元素選擇器(使用::符號)</h2>
+    <a href="#" class="f1">偽元素1</a>
+    <a href="#" class="f1">偽元素2</a>
+    <h2>群組選擇器(使用,符號)</h2>
+<div class="g1">div1</div>
+<div class="g2">div2</div>
 </body>
 </html>
