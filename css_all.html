@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 文字顏色 */
+        .text_color{
+            color: purple;
+        }
+        /* 文字對齊 */
+         .text_align{
+            text-align: center;
+        }
+         /* 行高 */
+         .text_height{
+            line-height:  30px; 
+        }
+         /* 文字線段 */
+         .text_decoration{
+            text-decoration: overline ; 
+        }
+         /* 縮排 */
+         .text_indent{
+            text-indent: 30px ; 
+        }
+        /* 字距 */
+        .text_spacing{
+            letter-spacing: 5px ; 
+        }
+        /* 字體樣式 */
+        .font_style{
+            font-style: italic ; 
+        }
+        /* 字體粗細 */
+         .font_weight{
+            font-weight: bold ; 
+        }
+        /* 字體大小 */
+        .font_size{
+        font-size: 30px ; 
+        }
+        /* 字型 */
+        .font_family{
+        font-family: "標楷體" ; 
+        }
+        /* link未訪問 */
+         .a_link:link{
+            color: red; 
+        }
+        /* link訪問過 */
+        .a_link:visited{
+            color: green; 
+        }
+        /* link移入 */
+        .a_link:hover{
+            text-decoration: none; 
+        }
+         /* link點下 */
+         .a_link:active{
+            color: yellow; 
+        }
+         /* list列表 */
+         .list{
+            /* 類型 */
+            list-style-type: square; 
+            /* 位置 */
+            list-style-position: inside; 
+            /* 圖片 */
+            list-style-image: url('12-1.png'); 
+        }
+    </style>
+</head>
+<body>
+    <div class="text_color text_align text_height text_decoration text_indent text_spacing">
+        text文字
+    </div>
+    <div class="font_style font_weight font_size font_family">
+        Font字型
+    </div>
+    <a href="#" class="a_link">國立台中科技大學</a>
+    <ol class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+</body>
+</html>
