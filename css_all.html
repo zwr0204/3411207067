@@ -70,6 +70,45 @@
             /* 圖片 */
             list-style-image: url('12-1.png'); 
         }
+        /* table 表格 */
+        .table{
+            /*合併框線*/
+            border-collapse: collapse;
+            width: 300px; 
+            height: 300px;
+        }
+        td{
+            text-align: center;
+            vertical-align: center;
+        }
+        /* 偶數行*/
+        tr:nth-child(even){
+        color: purple;
+        }
+        /* 奇數行*/
+        tr:nth-child(odd){
+        color: orange;
+        }
+        /* 邊框 */
+        .div_border{
+            /* 邊框粗細 */
+            border-width: 1px;
+            /* 邊框類型 */
+            border-style: solid;
+            /* 顏色 */
+            border-color: gold;
+        }
+        /* 外間距 */
+        .div_margin{
+            /* 上下左右 */
+            margin: 10px;
+            /* 上下左右 */
+            /* margin: 10px 5px; */
+        }
+        /* 留白 */
+        .div_padding{
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -85,5 +124,31 @@
         <li>2</li>
         <li>3</li>
     </ol>
+    <table class="table" border="1" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <div class="div_border">
+        div框線
+    </div>
+    <div class="div_border div_margin">
+        margin外間距
+    </div>
+    <div class="div_border div_padding">
+        padding留白
+    </div>
 </body>
 </html>
